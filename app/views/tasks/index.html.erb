@@ -1,17 +1,22 @@
-<div class="container" id="text_center">
+<div class="container">
+<div class="card text-center">
 
-<h1>My Task Manager</h1>
+  <h1>My Task Manager</h1>
+  <h2><%= link_to 'Create a new task', new_task_path(@task), class: "btn btn-primary" %></h2>
 
-<h2><%= link_to 'Create a new task', new_task_path(@task) %></h2>
+</div>
 
-<p2>List of tasks to do:</p2>
+  <div class="body">
+    <div class="card text-center">
 
-<% @tasks.each do |task| %>
-  <h2><%= link_to task.name, task_path(task) %></h2>
-  <p><%= task.details %></p>
+    <h2>List of tasks to do:</h2>
 
+    <% @tasks.each do |task| %>
+      <h3><%= link_to task.name, task_path(task), class: "btn btn-info btn-block" %></h3>
+      <p2><%= task.details %></p2>
 
-
-<% end %>
+    <% end %>
+    </div>
+  </div>
 
 </div>

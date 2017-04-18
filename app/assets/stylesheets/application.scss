@@ -1,0 +1,63 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+$brand-primary: #537FB7;
+$brand-info: transparent;
+$btn-info-color: #537FB7;
+
+
+  @import 'bootstrap-sprockets';
+  @import 'bootstrap';
+
+
+
+  .container {
+
+    background-color: #D0D0D0;
+    background-size:cover;
+
+  }
+
+  .card {
+    background: white;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+  .body {
+    text-align: text-center;
+
+  }
+
+  .btn {
+
+    font-weight: 500px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px #3D3D3B;
+  }
+
+
+  /*.btn-blue {
+    background-color: transparent;
+    color: white;
+    font-weight: 500px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px #3D3D3B;
+  }*/
