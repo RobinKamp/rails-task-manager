@@ -1,0 +1,17 @@
+<div class="container" id="text_center">
+
+<h1>My Task Manager</h1>
+
+<h2><%= link_to 'Create a new task', new_task_path(@task) %></h2>
+
+<p2>List of tasks to do:</p2>
+
+<% @tasks.each do |task| %>
+  <h2><%= link_to task.name, task_path(task) %></h2>
+  <p><%= task.details %></p>
+
+
+
+<% end %>
+
+</div>
